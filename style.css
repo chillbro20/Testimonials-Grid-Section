@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
 body {
     font-size: 13px;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -10,7 +17,7 @@ body {
 }
 
 .flex-container {
-    max-width: 1400px;
+    width: 1400px;
     padding: 6.5rem;
     margin-bottom: 1.3rem;
     margin-left: auto;
@@ -37,7 +44,7 @@ body {
 .box4,
 .box5 {
     padding: 2rem;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 
@@ -53,7 +60,6 @@ img {
     background-repeat: no-repeat;
     background-position: top right;
     background-position-x: 80%;
-    background-size: 122px;
     background-color: rgba(115, 63, 200, 255);
     color: white;
 
@@ -155,3 +161,5 @@ h2 {
     color: lightslategray;
     line-height: 1.5;
 }
+
+
