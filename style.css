@@ -1,10 +1,6 @@
-html {
-    font-size: 100%;
-}
-
 body {
     font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     padding-top: 2.5rem;
     padding-bottom: 1rem;
     display: flex;
@@ -27,15 +23,6 @@ body {
         "box1 box1 box2 box5"
         "box3 box4 box4 box5";
     gap: 20px;
-    height: auto;
-
-
-
-    @media screen and (max-width: 991px) {
-        grid-template-columns: minmax(300px, 1fr);
-        grid-template-areas: "box1""box2""box3""box4""box5";
-
-    }
 }
 
 .middle {
@@ -72,7 +59,7 @@ img {
 
 }
 
-.box1>.bottom {
+.box1 .bottom {
     padding-right: 2.5rem;
 }
 
@@ -83,7 +70,7 @@ img {
     color: white;
 }
 
-.box2>.bottom {
+.box2 .bottom {
     padding-right: 2rem;
 }
 
@@ -95,8 +82,12 @@ img {
     padding: 2.8rem;
 }
 
-.box3 > .middle {
+.box3 .middle {
     color: darkslateblue;
+}
+
+.box3 .top p {
+    color: gray;
 }
 
 /* =====================BOX4======================= */
@@ -106,7 +97,7 @@ img {
     color: white;
 }
 
-.box4>.bottom {
+.box4 .bottom {
     padding-right: 2.5rem;
 
 }
@@ -116,12 +107,20 @@ img {
     grid-area: box5;
     background-color: white;
     color: black;
-    padding: 1.8rem;
+    
 
 }
 
-.box5>.middle {
+.box5 .middle {
     color: darkslateblue;
+
+}
+.box5 .bottom{
+    padding-right: 2.5rem;
+}
+
+.box5 .top p {
+    color: gray;
 }
 
 
@@ -134,12 +133,16 @@ img {
 
 }
 
-.top>h2 {
-    font-size: 12px;
+h2 {
+    font-size: 20px;
 }
 
-.top>p {
-    color: lightgray;
+.top p {
+    color: #f9f9f9;
+    grid-area: title;
+    font-size: 0.6875rem;
+    opacity: 78%;
+    margin-top: 12px;
 }
 
 .middle {
@@ -149,6 +152,6 @@ img {
 }
 
 .bottom {
-    color: darken(#cfcfcf, 20%);
+    color: lightslategray;
     line-height: 1.5;
 }
