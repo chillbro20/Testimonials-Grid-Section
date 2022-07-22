@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  
+    
 
 
 }
@@ -58,6 +61,7 @@ img {
     grid-area: box1;
     background-image: url(/images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
+    background-size: 120px;
     background-position: top right;
     background-position-x: 80%;
     background-color: rgba(115, 63, 200, 255);
@@ -162,16 +166,22 @@ h2 {
     line-height: 1.5;
 }
 
-@media screen and (max-width: 1440px), (max-width: 1550px) {
+@media screen and (max-width: 1020px){
     .flex-container{
-        display: grid;
-        gap: 20px;
-        grid-template-areas:
-        "box1 box1 box2 box5"
-        "box1 box1 box2 box5"
-        "box3 box4 box4 box5";
-        padding: 6.5rem;
-
+    grid-template-columns: minmax(300px, 1fr);
+    grid-template-areas: 
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5";
     }
+
+
+            .flex-container  .middle{
+                font-size: 1.2rem;
+            }
     
 }
+
+
